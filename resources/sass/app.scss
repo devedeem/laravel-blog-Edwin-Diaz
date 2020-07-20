@@ -1,0 +1,82 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+
+.user-image{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.user-image > img{
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  font-size: 140pt;
+  color: #dddddd;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #dddddd;
+  z-index: 3;
+  display: none;
+  font-size: 140pt;
+  color: #ffffff;
+
+}
+.user-image:hover >.overlay{
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-pic{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  img{
+    height:  100%;
+    font-size: 45px;
+    color: #b7b7b7;
+  }
+
+}
+.table{
+  tbody{
+    td{
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}
+
+.shadow{
+  box-shadow: 0rem 1rem 1.5rem rgba(0,0,0,0.4);
+}
